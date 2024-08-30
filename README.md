@@ -4,7 +4,7 @@
 
 ## Overview
 
-CO2REAKT is a comprehensive numerical framework developed to calculate CO₂ solubility in saline and acidic solutions. Built on the Reaktoro chemical simulator (https://github.com/reaktoro/reaktoro), this framework includes three solvers and two datasets essential for accurate solubility calculations.
+CO2REAKT is a comprehensive numerical framework developed to calculate CO₂ solubility in saline and acidic solutions. Built on the Reaktoro chemical simulator (https://github.com/reaktoro/reaktoro), this framework includes three solvers and a dataset essential for accurate solubility calculations.
 
 ## Datasets
 
