@@ -44,17 +44,20 @@ CO2REAKT is a comprehensive numerical framework developed to calculate CO₂ sol
 
 ## Usage
 
-1. **Clone the Repository**:
+1. **Install Reaktoro**:
+- Use Reaktoro manual to install Reaktoro:
+  ```bash
+   https://reaktoro.org/installation
+
+2. **Clone the Repository**:
    ```bash
    git clone https://github.com/mcrossover97/CO2REAKT.git
 
-2. **Access Datasets**:
-
+3. **Access Datasets**:
 - The original and preprocessed datasets are available in the `datasets/` directory.
 - Load and explore the datasets using the provided data exploration scripts or your own analysis tools.
 
-3. **Run Solvers**:
-
+4. **Run Solvers**:
 - Navigate to the `solvers/` directory.
 - Run the solver scripts using your preferred Python environment.
 
