@@ -59,7 +59,10 @@ CO2REAKT is a comprehensive numerical framework developed to calculate CO₂ sol
 - Navigate to the `solvers/` directory.
 - Run the solver scripts using your preferred Python environment.
 
+## License
 
+This project is licensed under the GNU Lesser General Public License v2.1 License. See the `LICENSE` file for more details.
 
+## Contact
 
-  
+If you have any questions, feel free to email [khojatehmehr.mohammad@gmail.com](mailto:khojatehmehr.mohammad@gmail.com).
