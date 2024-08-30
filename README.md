@@ -45,9 +45,7 @@ CO2REAKT is a comprehensive numerical framework developed to calculate CO₂ sol
 ## Usage
 
 1. **Install Reaktoro**:
-- Use Reaktoro manual to install Reaktoro:
-  ```bash
-   https://reaktoro.org/installation
+- Use instructions to install Reaktoro (https://reaktoro.org/installation).
 
 2. **Clone the Repository**:
    ```bash
