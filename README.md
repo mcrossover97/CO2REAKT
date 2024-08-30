@@ -69,7 +69,7 @@ CO2REAKT is a comprehensive numerical framework developed to calculate CO₂ sol
 
 ### 3. Extended CO2REAKT Framework
 - **Description**: An extension of the CO2REAKT framework designed to account for HCl concentration in solutions containing salts.
-- **Inputs**: Similar to the original framework, with additional consideration of HCl concentration.
+- **Inputs**: Similar to the original framework, with additional consideration of HCl concentration. The amounts of species in the process of complete dissolution calcite and dolomite in HCl are tabulated in two .csv files in the `stoichiometry/` directory.
 - **Activity Models**: Uses general activity models such as HKF, Davies, and Debye-Huckel for all aqueous species, including CO₂.
 - **Functionality**: Though less accurate than the original framework, it effectively accounts for the impact of HCl on CO₂ solubility, highlighting the significant errors (up to 1063%) that can occur if HCl is not considered.
 
@@ -82,7 +82,7 @@ CO2REAKT is a comprehensive numerical framework developed to calculate CO₂ sol
    ```bash
    git clone https://github.com/mcrossover97/CO2REAKT.git
 
-3. **Access Datasets**:
+3. **Access Datasets and Stoichiometry Tables**:
 - The original and preprocessed datasets are available in the `datasets/` directory.
 - Load and explore the datasets using the provided data exploration scripts or your own analysis tools.
 
