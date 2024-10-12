@@ -7,7 +7,6 @@
 # Data preparation 
 import pandas as pd
 import numpy as np
-from reaktoro import *
 
 # Molecular weights of the salts
 molecular_weights = {
