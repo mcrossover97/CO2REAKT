@@ -106,6 +106,6 @@ This project is licensed under the GNU Lesser General Public License v2.1 Licens
 ## Contact
 
 If you have any questions, feel free to email [khojastehmehr.mohammad@gmail.com](mailto:khojatehmehr.mohammad@gmail.com).
-If you have any questions about the machine learning codes, feel free to email [MohammadGhodsi@gmail.com](mailto:eng.MohammadGhodsi@gmail.com)
+If you have any questions about the machine learning codes, feel free to email [mohammadGhodsi@gmail.com](mailto:eng.MohammadGhodsi@gmail.com)
 
 
