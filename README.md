@@ -4,7 +4,7 @@
 
 ## Overview
 
-CO2REAKT is a comprehensive numerical framework developed to calculate CO₂ solubility in saline and acidic solutions. Built on the Reaktoro chemical simulator (https://github.com/reaktoro/reaktoro), this framework includes three solvers and a dataset essential for accurate solubility calculations.
+CO2REAKT is a comprehensive numerical framework designed to calculate CO₂ solubility in saline and acidic solutions. It comprises four key modules. The first module is based on the widely recognized Duan and Sun (2003) model, often used as a reference for CO₂ solubility calculations. The second module leverages the [Reaktoro chemical simulator](https://github.com/reaktoro/reaktoro) to perform solubility calculations under various conditions. The third module extends the framework's capability to calculate CO₂ solubility in the presence of both salts and HCl. Lastly, the fourth module utilizes machine learning, specifically seven models trained with TensorFlow, to predict CO₂ solubilities efficiently.
 
 ## Datasets
 
@@ -64,14 +64,20 @@ CO2REAKT is a comprehensive numerical framework developed to calculate CO₂ sol
 - **Inputs**: Pressure, Temperature, and molalities of salts from the preprocessed dataset.
 - **Databases**: Utilizes Reaktoro's built-in databases such as AQ17, SUPCRTBL, and PHREEQC.
 - **Aqueous Species Activity Models**: For calculating aqueous species activities, excluding CO₂, activity models such as HKF, Davies, and Debye-Huckel were used. For calculating aqueous CO₂ activity, the model of Duan and Sun is used.
-- **Gaseous Species Activity Models**: Duan and Sun activity model for aqueous CO₂ and Spycher-Pruess-Ennis for gaseous CO₂ and water.
+- **Gaseous Species Activity Models**: For calculating gaseous species activities, Spycher-Pruess-Ennis were used.
 - **Functionality**: Predicts CO₂ solubility using Gibbs Energy Minimization (GEM) with accuracy similar to the Duan and Sun model.
 
 ### 3. Extended CO2REAKT Framework
 - **Description**: An extension of the CO2REAKT framework designed to account for HCl concentration in solutions containing salts.
 - **Inputs**: Similar to the original framework, with additional consideration of HCl concentration. The amounts of species in the process of complete dissolution calcite and dolomite in HCl are tabulated in two .csv files in the `stoichiometry/` directory.
-- **Activity Models**: Uses general activity models such as HKF, Davies, and Debye-Huckel for all aqueous species, including CO₂.
+- **Aqueous Species Activity Models**: For calculating aqueous species activities, activity models such as HKF, Davies, and Debye-Huckel were used. 
+- **Gaseous Species Activity Models**: For calculating gaseous species activities, Spycher-Pruess-Ennis was used.
 - **Functionality**: Though less accurate than the original framework, it effectively accounts for the impact of HCl on CO₂ solubility, highlighting the significant errors (up to 1063%) that can occur if HCl is not considered.
+
+### 4. Machine Learning models
+- **Description**: Description: Predicting CO2 solubilities using seven machine learning models: Single-Layer Artificial Neural Networks (Shallow ANNs), Deep Neural Networks (DNNs), Convolutional Neural Networks (CNNs), K-Nearest Neighbors (KNNs), Least Squares Support Vector Regressions (LSSVRs), Random Forest, and Extreme Gradient Boosting (XGBoost).
+- **Inputs**: Pressure, Temperature, and molalities of salts from the normalized dataset.
+- **Functionality**: These models calculate CO2 solubilities with high accuracy, comparable to the original framework. They effectively capture data variance, resulting in lower errors and significantly reduced computational runtime. The models are especially reliable for reactive transport simulations, with no convergence issues.
 
 ## Usage
 
@@ -97,6 +103,6 @@ This project is licensed under the GNU Lesser General Public License v2.1 Licens
 ## Contact
 
 If you have any questions, feel free to email [khojastehmehr.mohammad@gmail.com](mailto:khojatehmehr.mohammad@gmail.com).
-If you have any questions about the machine learning codes, feel free to ask me (mailto:eng.MohammadGhodsi@gmail.com)
+If you have any questions about the machine learning codes, feel free to email [MohammadGhodsi@gmail.com](mailto:eng.MohammadGhodsi@gmail.com)
 
 
