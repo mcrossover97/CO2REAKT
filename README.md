@@ -81,8 +81,10 @@ CO2REAKT is a comprehensive numerical framework designed to calculate CO₂ solu
 
 ## Usage
 
-1. **Install Reaktoro**:
-- Use instructions to install Reaktoro (https://reaktoro.org/installation).
+1. **Install Reaktoro, Scikit-learn, and TensorFlow**:
+- Use instructions to install Reaktoro [https://reaktoro.org/installation](https://reaktoro.org/installation).
+- Use instructions to install Scikit-learn [https://scikit-learn.org/1.5/install.html](https://scikit-learn.org/1.5/install.html).
+- Use instructions to install TensorFlow [https://www.tensorflow.org/install](https://www.tensorflow.org/install).
 
 2. **Clone the Repository**:
    ```bash
@@ -95,6 +97,7 @@ CO2REAKT is a comprehensive numerical framework designed to calculate CO₂ solu
 4. **Run Solvers**:
 - Navigate to the `solvers/` directory.
 - Run the solver scripts using your preferred Python environment.
+- For machine learning applications, navigate to the `ML/` directory.
 
 ## License
 
