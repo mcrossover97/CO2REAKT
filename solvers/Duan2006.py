@@ -202,8 +202,8 @@ def calculate_m_co2(P, T, m_ca, m_cl, m_na, m_K, m_mg, m_so4):
     phi_new_co2 = calculate_new_phi_co2(P, T)
     ln_m_co2 = (np.log(y_co2 * phi_new_co2 * P)
                 - mu_l0_co2_RT
-                - 2 * lambda_co2_na * (m_na + m_k + 2 * m_ca + 2 * m_mg)
-                - xi_co2_na_cl * m_cl * (m_na + m_k + m_ca + m_mg)
+                - 2 * lambda_co2_na * (m_na + m_K + 2 * m_ca + 2 * m_mg)
+                - xi_co2_na_cl * m_cl * (m_na + m_K + m_ca + m_mg)
                 + 0.07 * m_so4)
     
     return np.exp(ln_m_co2)
